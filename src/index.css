@@ -1,13 +1,78 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Quicksand;
+  color: #333;
+  padding: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h2{
+  color: blueviolet;
+}
+.navbar .links{
+  margin-left: 20px;
+}
+.navbar .links a{
+  /* display: flex; */
+  align-items: center;
+  color: blue;
+}
+.navbar .links a:hover{
+  background-color: #f2f2f2;
+  color: #176f79;
+}
+.navbar a{
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  /* color: #791717; */
+}
+/* General form styling */
+.form label{
+  width: 100%;
+  text-align: start;
+}
+.form{
+  padding: 0 5%;
+}
+.form form input{
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  width: 100%;
+}
+.form form .bigger{
+  height: 200px;
+}
+.form form button{
+ border: 0;
+ outline: 0;
+ border-radius: 10px;
+ background: blue;
+ text-align: center;
+ padding: 10px;
+ margin-bottom: 10px;
+  
+}
+/* .form form button {
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 10px; 
+  background-color: #007bff; 
+  color: white; 
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+} */
+.form form button:hover {
+  background-color: #0056b3; 
+  color: green;
 }
